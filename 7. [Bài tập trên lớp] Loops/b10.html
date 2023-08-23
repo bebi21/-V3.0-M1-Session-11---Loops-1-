@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const targetNumber = Math.floor(Math.random() * 10) + 1; // Số ngẫu nhiên từ 1 đến 10
+      let attempts = 0;
+      const maxAttempts = 3;
+      let isWin = false;
+
+      while (attempts < maxAttempts) {
+        const userGuess = parseInt(prompt("Hãy đoán một số từ 1 đến 10:"));
+
+        if (!isNaN(userGuess) && userGuess >= 1 && userGuess <= 10) {
+          attempts++;
+
+          if (userGuess === targetNumber) {
+            isWin = true;
+            break;
+          } else if (userGuess < targetNumber) {
+            console.log("Số bạn đoán nhỏ hơn. Hãy thử lại.");
+          } else {
+            console.log("Số bạn đoán lớn hơn. Hãy thử lại.");
+          }
+        } else {
+          console.log("Vui lòng nhập một số từ 1 đến 10.");
+        }
+      }
+
+      if (isWin) {
+        console.log("Chúc mừng! Bạn đã đoán đúng.");
+      } else {
+        console.log(
+          `Bạn đã hết số lượt đoán. Số đúng là ${targetNumber}. Bạn đã thua.`
+        );
+      }
+    </script>
+  </body>
+</html>

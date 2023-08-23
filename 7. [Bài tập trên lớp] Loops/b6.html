@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const n = +prompt("Nhập số N:");
+
+      if (n > 0) {
+        let sum = 1;
+        for (let i = 2; i <= n / 2; i++) {
+          if (n % i === 0) {
+            sum += i;
+          }
+        }
+        console.log(`${n} ${sum === n ? "là" : "không phải"} số hoàn hảo.`);
+      } else {
+        console.log("Vui lòng nhập một số nguyên dương hợp lệ.");
+      }
+    </script>
+  </body>
+</html>

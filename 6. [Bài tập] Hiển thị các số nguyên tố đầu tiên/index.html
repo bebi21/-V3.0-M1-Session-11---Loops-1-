@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Trong phần này, chúng ta sẽ phát triển một ứng dụng cho phép hiển thị 20 số nguyên tố đầu tiên. -->
+    <script>
+      let number = +prompt("nhap so  nguyen to ");
+      let result = true;
+
+      while () {
+        if (number <= 1) {
+          console.log("0 phai  so  nguyen to");
+        } else {
+          for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+              console.log("ko phai  so  nguyen to");
+              result = false;
+            }
+            if (result) {
+              console.log("la so nguyen to");
+            }
+          }
+        }
+      }
+      // let number = +prompt("nhap so  nguyen to ");
+      // let result = true;
+
+      // if (number <= 1) {
+      //   console.log("0 phai  so  nguyen to");
+      // } else {
+      //   for (let i = 2; i <= Math.sqrt(number); i++) {
+      //     if (number % i == 0) {
+      //       console.log("ko phai  so  nguyen to");
+      //       result = false;
+      //     }
+      //   }
+      //   if (result) {
+      //     console.log("la so nguyen to");
+      //   }
+      // }
+
+      // for (let i = 2; i <= numbers; i++) {
+      //   if (numbers % i == 0) {
+      //     count++;
+      //   }
+      // }
+      // console.log(count);
+      // if (count == 1) {
+      //   // Count++
+      //   console.log(`${numbers}`);
+      // } else {
+      //   console.log("ko phai so nguyen to");
+      // }
+
+      //   let count = 0;
+      //   for (let numbers = 2; numbers < 10; numbers++) {
+      //     for (let i = 2; i <= numbers; i++) {
+      //       if (numbers % i == 0) {
+      //         count++;
+      //       }
+      //     }
+      //     if (count == 1) {
+      //       // Count++
+      //       console.log(`${numbers}`);
+      //     }
+      //     count = 0;
+      //   }
+      // let numbers = parseInt(prompt("Nhập số lượng số nguyên tố cần in:"));
+      // let count = 0;
+      // let N = 2;
+
+      // while (count < numbers) {
+      //   let isPrime = true;
+
+      //   for (let i = 2; i <= Math.sqrt(N); i++) {
+      //     if (N % i === 0) {
+      //       isPrime = false;
+      //       break;
+      //     }
+      //   }
+
+      //   if (isPrime) {
+      //     console.log(N);
+      //     count++;
+      //   }
+
+      //   N++;
+      // }
+      // let number = +prompt("nhap so luong so nguyen to ");
+      // let Count = 0;
+      // let count = 0;
+      // for (let numbers = 2; numbers < 100; numbers++) {
+      //   for (let i = 2; i <= numbers; i++) {
+      //     if (numbers % i == 0) {
+      //       count++;
+      //     }
+      //   }
+      //   if (count == 1) {
+      //     Count++;
+      //     console.log(`${numbers}`);
+      //     // console.log(Count)
+      //   }
+      //   count = 0;
+      //   if (Count >= number) {
+      //     break;
+      //   }
+      // }
+    </script>
+  </body>
+</html>
