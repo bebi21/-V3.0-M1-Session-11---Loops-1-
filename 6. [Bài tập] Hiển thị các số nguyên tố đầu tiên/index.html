@@ -11,37 +11,19 @@
       let number = +prompt("nhap so  nguyen to ");
       let result = true;
 
-      while () {
-        if (number <= 1) {
-          console.log("0 phai  so  nguyen to");
-        } else {
-          for (let i = 2; i <= Math.sqrt(number); i++) {
-            if (number % i == 0) {
-              console.log("ko phai  so  nguyen to");
-              result = false;
-            }
-            if (result) {
-              console.log("la so nguyen to");
-            }
+      if (number <= 1) {
+        console.log("0 phai  so  nguyen to");
+      } else {
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+          if (number % i == 0) {
+            console.log("ko phai  so  nguyen to");
+            result = false;
           }
         }
+        if (result) {
+          console.log("la so nguyen to");
+        }
       }
-      // let number = +prompt("nhap so  nguyen to ");
-      // let result = true;
-
-      // if (number <= 1) {
-      //   console.log("0 phai  so  nguyen to");
-      // } else {
-      //   for (let i = 2; i <= Math.sqrt(number); i++) {
-      //     if (number % i == 0) {
-      //       console.log("ko phai  so  nguyen to");
-      //       result = false;
-      //     }
-      //   }
-      //   if (result) {
-      //     console.log("la so nguyen to");
-      //   }
-      // }
 
       // for (let i = 2; i <= numbers; i++) {
       //   if (numbers % i == 0) {
